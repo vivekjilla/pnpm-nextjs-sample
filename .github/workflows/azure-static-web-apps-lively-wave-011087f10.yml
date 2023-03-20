@@ -24,6 +24,7 @@ jobs:
         env:
           PRE_BUILD_COMMAND: npm install -g pnpm && pnpm install
           RUN_BUILD_COMMAND: pnpm run build
+          CUSTOM_BUILD_COMMAND: pnpm run build
           VERBOSE: true
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_LIVELY_WAVE_011087F10 }}
