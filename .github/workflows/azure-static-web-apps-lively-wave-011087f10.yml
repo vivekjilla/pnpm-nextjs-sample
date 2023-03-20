@@ -23,8 +23,7 @@ jobs:
         uses: vivekjilla/staticstiesactionoryx@latest
         env:
           PRE_BUILD_COMMAND: npm install -g pnpm && pnpm install
-          RUN_BUILD_COMMAND: pnpm run build
-          CUSTOM_BUILD_COMMAND: pnpm run build && cp -r node_modules .next/standalone/node_modules
+          APP_BUILD_COMMAND: pnpm run build && cp -r node_modules .next/standalone/node_modules
           VERBOSE: true
           # API_UPLOAD_ENDPOINT: ${{ secrets.API_UPLOAD_ENDPOINT}}
         with:
